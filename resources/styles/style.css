@@ -9,6 +9,15 @@ a {
     color: black;
 }
 
+.sidebar ul {
+    text-decoration: underline;
+    padding: 6px;
+}
+
+.sidebar ul:hover {
+    cursor: pointer;
+}
+
 .sidebar {
     width: 170px;
     height:calc(100vh - 8px);
@@ -54,4 +63,8 @@ h2 {
     margin: 10px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
+}
+
+h1 {
+    margin: 5px;
 }

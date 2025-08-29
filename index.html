@@ -8,29 +8,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div class="sidebar" id="main">
+    <div class="sidebar" id="mainTab">
         <h2>Mailand IT</h2>
-        <a href="#" onclick="gotoBrukerstotte()">Brukerstøtte</a>
-        <br>
-        <a href="">YFF</a>
+        <ul onclick="gotoTab('brukerstotteTab')">Brukerstøtte</ul>
+        <ul>YFF</ul>
     </div>
-    <div class="sidebar" id="brukerstotte" style="display: none;">
-        <a href="#" onclick="gotoMain()">Go back <--</a>
+    <div class="sidebar" id="brukerstotteTab" style="display: none;">
+        <ul onclick="gotoTab('mainTab')">Go back <--</ul>
         <h2>Brkrstte</h2>
-        <a href="#" onclick="showWeek('BSU3')">Uke 3</a>
+        <ul onclick="gotoContent('BSU3Content')">Uke 3</ul>
+        <ul onclick="gotoContent('BSU35Content')">Uke 35</ul>
     </div>
     
     <div class="content">
-        <div id="BSU3" style="display: none;">
+        <div id="mainContent">
+            <h1>Hei! Jeg heter Casper</h1>
+            <p>Jeg vet ikke hva jeg skal skrive her, det var mest bare for å teste.</p>
+            <br>
+            <p>subscrib:</p>
+            <div class="g-ytsubscribe" data-channelid="UC7Za42d6DOZbSlt1FwCtYYA" data-layout="default" data-count="hidden"></div>
+        </div>
+        <div id="BSU3Content" style="display: none;">
             <p>I dag har jeg gjort bla bla bla</p>
             <p>Jeg har også gjort dette:</p>
             <li>blah</li>
             <li>blah</li>
             <li>blahh</li>
         </div>
+        <div id="BSU35Content" style="display: none;">
+            Test
+        </div>
     </div>
-
-<script src="resources/js/tabmanager.js"></script>
+    
+    <script src="resources/js/tabmanager.js"></script>
 </body>
 </html>
 
+<script src="https://apis.google.com/js/platform.js"></script>

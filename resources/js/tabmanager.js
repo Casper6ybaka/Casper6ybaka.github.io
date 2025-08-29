@@ -1,19 +1,38 @@
-const main = document.getElementById("main");
-const brukerstotte = document.getElementById("brukerstotte");
+const mainTab = document.getElementById("mainTab");
+const brukerstotteTab = document.getElementById("brukerstotteTab");
+const tabs = [
+    mainTab,
+    brukerstotteTab
+]
 
-const tabs = [main, brukerstotte]
-function gotoBrukerstotte() {
-    tabs.forEach(tab => tab.style.display = 'none');
-    brukerstotte.style.display = 'block';
+const mainContent = document.getElementById("mainContent")
+const BSU3Content = document.getElementById("BSU3Content")
+const BSU35Content = document.getElementById("BSU35Content")
+const contents = [
+    mainContent,
+    BSU3Content,
+    BSU35Content
+]
+
+function gotoTab(tabid) {
+    hideTab()
+    const tab = document.getElementById(tabid);
+    tab.style.display = "block";
+    if (tabid == "mainTab") {
+        gotoContent("mainContent")
+    } else if (tabid == "brukerstotteTab") {
+        gotoContent("brukerstotteContent")
+    }
 }
 
-function gotoMain() {
-    tabs.forEach(tab => tab.style.display = 'none');
-    main.style.display = 'block';
+function gotoContent(contentid) {
+    hideContent()
+    document.getElementById(contentid).style.display = "block";
 }
 
-
-
-function showWeek(weekid) {
-    document.getElementById(weekid).style.display = "block";
+function hideContent() {
+    contents.forEach(content => content.style.display = 'none');
+}
+function hideTab() {
+    tabs.forEach(tab => tab.style.display = "none");
 }
