@@ -1,0 +1,52 @@
+body {
+    margin: 0px;
+    background-color: gray;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    margin: 10px;
+}
+
+.sidebar {
+    width: 170px;
+    height:calc(100vh - 8px);
+    background-color:cornsilk;
+    border-radius: 10px;
+    position:fixed;
+    top: 0;
+    margin: 4px;
+}
+
+.content {
+    width:calc(100vw - 170px - 12px);
+    height: calc(100vh - 8px);
+    background-color: gainsboro;
+    left: 178px;
+    position: fixed;
+    margin: 4px;
+    margin-left: 0;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+div ul {
+    margin: 0;
+}
+
+.content div {
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+p {
+    margin: 0;
+}
+
+h2 {
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
