@@ -6,3 +6,8 @@ function gotoBrukerstotte() {
     tabs.forEach(tab => tab.style.display = 'none');
     brukerstotte.style.display = 'block';
 }
+
+function gotoMain() {
+    tabs.forEach(tab => tab.style.display = 'none');
+    main.style.display = 'block';
+}

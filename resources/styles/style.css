@@ -6,6 +6,7 @@ body {
 
 a {
     margin: 10px;
+    color: black;
 }
 
 .sidebar {
@@ -16,6 +17,10 @@ a {
     position:fixed;
     top: 0;
     margin: 4px;
+}
+
+.sidebar p {
+    margin: 5px;
 }
 
 .content {
@@ -42,7 +47,7 @@ div ul {
 }
 
 p {
-    margin: 0;
+    margin: 0px;
 }
 
 h2 {
