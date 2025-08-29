@@ -11,3 +11,9 @@ function gotoMain() {
     tabs.forEach(tab => tab.style.display = 'none');
     main.style.display = 'block';
 }
+
+
+
+function showWeek(weekid) {
+    document.getElementById(weekid).style.display = "block";
+}
