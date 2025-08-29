@@ -11,13 +11,19 @@
     <div class="sidebar" id="mainTab">
         <h2>Mailand IT</h2>
         <ul onclick="gotoTab('brukerstotteTab')">Brukerstøtte</ul>
-        <ul>YFF</ul>
+        <ul onclick="gotoTab('yffTab')">YFF</ul>
     </div>
     <div class="sidebar" id="brukerstotteTab" style="display: none;">
-        <ul onclick="gotoTab('mainTab')">Go back <--</ul>
+        <ul onclick="gotoTab('mainTab')">Gå tilbake <--</ul>
         <h2>Brkrstte</h2>
         <ul onclick="gotoContent('BSU3Content')">Uke 3</ul>
+        <ul onclick="gotoContent('BSU33Content')">Uke 33</ul>
+        <ul onclick="gotoContent('BSU34Content')">Uke 34</ul>
         <ul onclick="gotoContent('BSU35Content')">Uke 35</ul>
+    </div>
+    <div class="sidebar" id="yffTab" style="display: none;">
+        <ul onclick="gotoTab('mainTab')">Gå tilbake <--</ul>
+        <h2>Finnes ikke ennå</h2>
     </div>
     
     <div class="content">
@@ -29,14 +35,26 @@
             <div class="g-ytsubscribe" data-channelid="UC7Za42d6DOZbSlt1FwCtYYA" data-layout="default" data-count="hidden"></div>
         </div>
         <div id="BSU3Content" style="display: none;">
+            Dette er bare en test
             <p>I dag har jeg gjort bla bla bla</p>
             <p>Jeg har også gjort dette:</p>
             <li>blah</li>
             <li>blah</li>
             <li>blahh</li>
         </div>
+        <div id="BSU33Content" style="display: none;">
+            <b>Uke 33</b>
+        </div>
+        <div id="BSU34Content" style="display: none;">
+            <b>Uke 34</b>
+        </div>
         <div id="BSU35Content" style="display: none;">
-            Test
+            <b>Uke 35</b>
+            <p>Vi snakket om læreplass og om hva fagforeninger er og hvordan de kan hjelpe oss.</p>
+            <p>Jeg jobbet en del på denne nettsiden, og har nå klart å sette den opp sånn at <br>
+               jeg lett kan legge til nye sider og logge flere uker.</p>
+            <br>
+            <p>Skriv mer senere</p>
         </div>
     </div>
     
