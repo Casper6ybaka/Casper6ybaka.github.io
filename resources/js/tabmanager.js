@@ -12,12 +12,14 @@ const BSU3Content = document.getElementById("BSU3Content");
 const BSU33Content = document.getElementById("BSU33Content");
 const BSU34Content = document.getElementById("BSU34Content");
 const BSU35Content = document.getElementById("BSU35Content");
+const BSU36Content = document.getElementById("BSU36Content");
 const contents = [
     mainContent,
     BSU3Content,
     BSU33Content,
     BSU34Content,
-    BSU35Content
+    BSU35Content,
+    BSU36Content
 ];
 
 function gotoTab(tabid) {
